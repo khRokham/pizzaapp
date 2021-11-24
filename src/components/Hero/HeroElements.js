@@ -2,8 +2,8 @@ import styled from "styled-components";
 import ImgBg from '../../images/pizza-1.jpg'
 
 export const HeroContainer = styled.div`
-    background:url(${ImgBg});
     
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7) , rgba(0,0,0,0.1)),url(${ImgBg});
     height:100vh;
     width:100%;
     background-position: center;
@@ -38,10 +38,15 @@ export const HeroH1= styled.h1`
         font-size:clamp(2.5rem,10vw,5rem);
         margin-bottom:1rem;
         box-shodow:3px 5px #e9ba23;
+        border: 5px solid orange;
+        border-bottom-right-radius: 25px;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-width: thick;
         letter-spacing:3px;
         `
 export const HeroP = styled.p`
-    
+    font-size:2rem;
     margin-bottom:2rem;`
 
 export const HeroBtn = styled.button`
